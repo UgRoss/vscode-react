@@ -1,0 +1,56 @@
+{
+    "name": "vscode-react-snippets",
+    "displayName": "Reactjs code snippets",
+    "description": "ES7 ReactJS/Redux snippets",
+    "version": "1.0.0",
+    "publisher": "ugross",
+    "icon": "images/icon.png",
+    "galleryBanner": {
+      "theme": "light"
+    },
+    "license": "SEE LICENSE IN LICENSE.md",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/UgRoss/vscode-react"
+    },
+    "engines": {
+      "vscode": "^1.13.0"
+    },
+    "categories": [
+      "Snippets"
+    ],
+    "keywords": [
+        "react",
+        "redux",
+        "snippets",
+        "es6",
+        "jsx",
+        "es7",
+        "snippet"
+    ],
+    "author": "Rostyslav Ugryniuk <ugross.work@gmail.com>",
+    "contributes": {
+      "snippets": [
+        {
+          "language": "javascriptreact",
+          "path": "./snippets/snippets.json"
+        },
+        {
+          "language": "javascript",
+          "path": "./snippets/snippets.json"
+        },
+        {
+          "language": "typescript",
+          "path": "./snippets/snippets.json"
+        },
+        {
+          "language": "typescriptreact",
+          "path": "./snippets/snippets.json"
+        },
+        {
+          "language": "jsx",
+          "path": "./snippets/snippets.json"
+        }
+      ]
+    }
+  }
