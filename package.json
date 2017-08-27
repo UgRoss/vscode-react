@@ -1,7 +1,7 @@
 {
     "name": "vscode-react-snippets",
-    "displayName": "Reactjs code snippets",
-    "description": "ES7 ReactJS/Redux snippets",
+    "displayName": "ES7 ReactJS & Redux snippets",
+    "description": "ES7 ReactJS and Redux code snippets",
     "version": "1.0.0",
     "publisher": "ugross",
     "icon": "images/icon.png",
@@ -24,9 +24,7 @@
         "redux",
         "snippets",
         "es6",
-        "jsx",
-        "es7",
-        "snippet"
+        "es7"
     ],
     "author": "Rostyslav Ugryniuk <ugross.work@gmail.com>",
     "contributes": {
