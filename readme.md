@@ -22,6 +22,8 @@ This extension provide you Javascript and React/Redux snippets in ES7 with babel
 |`rcr→`|`React class component with redux`|
 |`rcf→`|`React functional component`|
 |`rcfr→`|`React functional component with Redux`|
+|`rhoc→`|`React Higher-Order component`|
+|`rhocf→`|`React Higher-Order funtional component`|
 
 ### PropTypes
 |Prefix|Method|
