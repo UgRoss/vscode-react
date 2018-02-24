@@ -1,7 +1,46 @@
 {
-  /* ======================== 
-	// Main
-	======================== */
+  /* ========== Import ========== */
+  "React Import": {
+    "prefix": "imr",
+    "body": "import React from 'react';\n"
+  },
+  "React & Component Import": {
+    "prefix": "imrc",
+    "body": "import React, { Component } from 'react';\n"
+  },
+  "React-DOM Import": {
+    "prefix": "imrd",
+    "body": "import { render } from 'react-dom';\n"
+  },
+  "PropTypes Import": {
+    "prefix": "impt",
+    "body": "import PropTypes from 'prop-types';\n"
+  },
+  "Component Import": {
+    "prefix": "imc",
+    "body": "import ${1:componentName} from 'components/${1:componentName}';\n"
+  },
+  "Connect Redux": {
+    "prefix": "imconnect",
+    "body": "import { connect } from 'react-redux';\n"
+  },
+  "Provider Redux": {
+    "prefix": "improvider",
+    "body": "import { Provider } from 'react-redux';\n"
+  },
+  "React-router Import": {
+    "prefix": "imrr",
+    "body": ["import { BrowserRouter as Router, Route } from 'react-router-dom';\n"]
+  },
+  "React-router NavLink Import": {
+    "prefix": "imnl",
+    "body": "import { NavLink } from 'react-router-dom';\n"
+  },
+  "React-router withRouter Import": {
+    "prefix": "imwr",
+    "body": "import { withRouter } from 'react-router-dom';\n"
+  },
+  /* ========== MAIN ========== */
   "React Class Component": {
     "prefix": "rc",
     "body": [
@@ -131,12 +170,10 @@
       "\treturn ${2:WithFoo};",
       "}\n",
       "export default ${1:withFoo};\n"
-	],
-	"description": "React HOC with functional component"
+    ],
+    "description": "React HOC with functional component"
   },
-  /* ======================== 
-	// Helpers
-	======================== */
+  /* ========== React Helpers ========== */
   "Class Constructor": {
     "prefix": "rconst",
     "body": "constructor(props) {\n\tsuper(props);\n\tthis.state = {};\n\t$0\n}\n",
@@ -147,9 +184,7 @@
     "body": "this.${1} = this.${1}.bind(this);",
     "description": "React bind method to this"
   },
-  /* ======================== 
-	// PropTypes
-	======================== */
+  /* ========== PropTypes ========== */
   // Number
   "React PropType number": {
     "prefix": "rpn",
@@ -227,9 +262,7 @@
     "body": ["${1:propName}: PropTypes.shape({", "\t${2}", "}).isRequired,"],
     "description": "PropTypes shape required"
   },
-  /* ======================== 
-	// REDUX
-	======================== */
+  /* ========== Redux ========== */
   "Redux map": {
     "prefix": "rxmap",
     "body": [
@@ -259,6 +292,11 @@
   },
   "reduxAction": {
     "prefix": "rxaction",
-    "body": ["export const ${1:actionName} = (${2:param}) => ({", "\ttype: ${3:TYPE},", "\tpayload: ${4:payload}", "});\n"]
+    "body": [
+      "export const ${1:actionName} = (${2:param}) => ({",
+      "\ttype: ${3:TYPE},",
+      "\tpayload: ${4:payload}",
+      "});\n"
+    ]
   }
 }

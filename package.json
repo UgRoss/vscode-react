@@ -1,8 +1,8 @@
 {
     "name": "vscode-react-snippets",
-    "displayName": "ES7 ReactJS & Redux snippets",
-    "description": "ES7 ReactJS and Redux code snippets",
-    "version": "1.0.1",
+    "displayName": "ReactJS, Redux & React Router snippets",
+    "description": "ReactJS, Redux and React Rounter code snippets",
+    "version": "1.2.0",
     "publisher": "ugross",
     "icon": "images/icon.png",
     "galleryBanner": {
