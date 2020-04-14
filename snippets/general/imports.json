@@ -1,0 +1,47 @@
+{
+  "import React": {
+    "prefix": "imr",
+    "body": "import React from 'react';\n",
+    "description": "import React"
+  },
+  "import React, { Component }": {
+    "prefix": "imrc",
+    "body": "import React, { Component } from 'react';\n",
+    "description": "import React, { Component }"
+  },
+  "import ReactDOM": {
+    "prefix": "imrd",
+    "body": "import ReactDOM from 'react-dom';\n",
+    "description": "import ReactDOM"
+  },
+  "import PropTypes": {
+    "prefix": "impt",
+    "body": "import PropTypes from 'prop-types';\n",
+    "description": "import PropTypes"
+  },
+  "Component Import": {
+    "prefix": "imc",
+    "body": "import ${1:ComponentName} from 'components/${1:ComponentName}';\n",
+    "description": "import own React component"
+  },
+  "import Connect from react-redux": {
+    "prefix": "imconnect",
+    "body": "import { connect } from 'react-redux';\n",
+    "description": "import connect from react-redux"
+  },
+  "import Provider from react-redux": {
+    "prefix": "improvider",
+    "body": "import { Provider } from 'react-redux';\n",
+    "description": "import Provider from react-redux"
+  },
+  "import React Router": {
+    "prefix": "imrr",
+    "body": "import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';\n",
+    "description": "import React Router"
+  },
+  "import Link from React Router": {
+    "prefix": "imrrlink",
+    "body": "import { Link } from 'react-router-dom';\n",
+    "description": "import Link from react-router-dom"
+  }
+}

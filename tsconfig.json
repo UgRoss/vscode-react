@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "lib": ["es2017"],
+    "module": "commonjs",
+    "outDir": "build",
+    "rootDir": "src",
+    "sourceMap": false,
+    "strict": true,
+    "target": "es6",
+
+    /* Additional Checks */
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", ".vscode-test"]
+}

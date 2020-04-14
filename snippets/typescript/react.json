@@ -1,0 +1,162 @@
+{
+  "React Component": {
+    "prefix": "rc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface ${1}Props {",
+      "\t",
+      "}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}}: React.FC<${1}Props> = () => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t);",
+      "};",
+      "",
+      "export default ${1};"
+    ],
+    "description": "React functional component with return statement"
+  },
+  "React Component without return": {
+    "prefix": "rcwr",
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface ${1}Props {",
+      "\t",
+      "}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}}: React.FC<${1}Props> = () => (",
+      "\t<div>",
+      "\t\t$0",
+      "\t</div>",
+      ");",
+      "",
+      "export default ${1};"
+    ],
+    "description": "React functional component without return statement"
+  },
+  "React Component with memo": {
+    "prefix": "rcm",
+    "body": [
+      "import React, { memo } from 'react';",
+      "",
+      "interface ${1}Props {",
+      "\t",
+      "}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}}: React.FC<${1}Props> = memo(() => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t);",
+      "});",
+      "",
+      "export default ${1};"
+    ],
+    "description": "React component with memo"
+  },
+  "React Class Component": {
+    "prefix": "rcc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface ${1}Props {",
+      "\t",
+      "}",
+      "",
+      "interface ${1}State {",
+      "\t",
+      "}",
+      "",
+      "class ${1:${TM_FILENAME_BASE}} extends React.Component<${1}Props, ${1}State> {",
+      "\tstate = {}",
+      "",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t$0",
+      "\t\t\t</div>",
+      "\t\t);",
+      "\t}",
+      "}",
+      "",
+      "",
+      "export default ${1};\n"
+    ],
+    "description": "React Class Component"
+  },
+  "React PureComponent": {
+    "prefix": "rpc",
+    "body": [
+      "import React, { PureComponent } from 'react';",
+      "",
+      "interface ${1}Props {",
+      "\t",
+      "}",
+      "",
+      "class ${1:${TM_FILENAME_BASE}} extends PureComponent<${1}Props> {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t$0",
+      "\t\t\t</div>",
+      "\t\t)",
+      "\t}",
+      "}",
+      "",
+      "export default ${1};\n"
+    ],
+    "description": "React PureComponent class"
+  },
+  "React HOC": {
+    "prefix": "rhoc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "function ${1:withFoo}<T>(Component: React.ComponentType<T>) {",
+      "\tconst ${2:WithFoo}: React.FC<T> = (props) => {",
+      "\t\treturn <Component {...props} />;",
+      "\t};",
+      "",
+      "\t${2:WithFoo}.displayName = `${1:withFoo}(${Component.displayName || Component.name}`;",
+      "",
+      "\treturn ${2:WithFoo};",
+      "}",
+      "",
+      "export default ${1:withFoo};\n"
+    ],
+    "description": "React HOC"
+  },
+  "React HOC Class Component": {
+    "prefix": "rhocc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "function ${1:withFoo}<T>(WrappedComponent: React.ComponentType<T>) {",
+      "\tclass ${2:WithFoo} extends React.Component<T> {",
+      "\t\tpublic static displayName = `${1:withFoo}(${WrappedComponent.displayName || WrappedComponent.name}`;",
+      "\t\tstate = {};",
+      "",
+      "\t\trender() {",
+      "\t\t\treturn <WrappedComponent {...this.props} />;",
+      "\t\t}",
+      "\t}",
+      "",
+      "\treturn ${2:WithFoo};",
+      "}",
+      "",
+      "export default ${1:withFoo};\n"
+    ],
+    "description": "React HOC Class Component"
+  },
+  "React bind method": {
+    "prefix": "rbind",
+    "body": "this.${1} = this.${1}.bind(this);",
+    "description": "React bind method to this"
+  }
+}
