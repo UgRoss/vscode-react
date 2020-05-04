@@ -5,6 +5,8 @@
 
 This extension provides you React snippets for [VS Code](https://code.visualstudio.com/)
 
+![Snippets Demo](./images/snippets-demo.gif)
+
 ## Supported languages (file extensions)
 
 - JavaScript (`.js`)
