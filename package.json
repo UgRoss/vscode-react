@@ -31,19 +31,19 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./build/javascript.json"
+        "path": "./build/snippets/javascript.json"
       },
       {
         "language": "javascriptreact",
-        "path": "./build/javascript.json"
+        "path": "./build/snippets/javascript.json"
       },
       {
         "language": "typescript",
-        "path": "./build/typescript.json"
+        "path": "./build/snippets/typescript.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./build/typescript.json"
+        "path": "./build/snippets/typescript.json"
       }
     ]
   },
@@ -55,11 +55,12 @@
   },
   "devDependencies": {
     "@types/node": "^13.9.3",
+    "@types/rimraf": "^3.0.0",
     "prettier": "^1.19.1",
     "typescript": "^3.8.3",
     "vscode": "^1.1.36"
   },
   "dependencies": {
-    "rambda": "^5.0.0"
+    "rimraf": "^3.0.2"
   }
 }
