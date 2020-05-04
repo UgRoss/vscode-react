@@ -31,7 +31,7 @@ export const getAllFilesInDir = async (dirPath: string): Promise<string[]> => {
  */
 export const getFilesContent = async (filesPaths: string[]): Promise<string[]> => {
   return Promise.all(
-    filesPaths.map(async filePath => {
+    filesPaths.map(async (filePath) => {
       const fileContent = await readFileAsync(filePath);
       return fileContent.toString();
     })
@@ -46,7 +46,7 @@ export const getFilesContent = async (filesPaths: string[]): Promise<string[]> =
  */
 export const getSnippetsFromFolder = async (folderPath: string): Promise<{}> => {
   const filesPaths = await getAllFilesInDir(folderPath);
-  const jsonFiles = filesPaths.filter(filePath => JSON_FILE_REGEX.test(filePath));
+  const jsonFiles = filesPaths.filter((filePath) => JSON_FILE_REGEX.test(filePath));
 
   const snippetsContent = await getFilesContent(jsonFiles);
 

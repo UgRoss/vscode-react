@@ -54,11 +54,11 @@
     "vscode:prepublish": "npm run build"
   },
   "devDependencies": {
-    "@types/node": "^13.9.3",
+    "@types/node": "^13.13.4",
     "@types/rimraf": "^3.0.0",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.5",
     "typescript": "^3.8.3",
-    "vscode": "^1.1.36"
+    "vscode": "^1.1.37"
   },
   "dependencies": {
     "rimraf": "^3.0.2"
