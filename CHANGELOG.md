@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ---
 
+## [2.0.0] - 2020-05-05
+
+### ✨ Added
+
+- More `'prop-types'` snippets
+- More `redux` snippets
+- Small snippets to write unit tests faster
+- 🥳 **React Hooks**
+- New snippets folder structure to easier edit/update snippets
+- TypeScript code that handles snippets compilation
+- Prettier
+- .editorconfig
+
+### 🛠 Changed
+
+- React functional components are now in higher priority than class components.
+- Changed the way how snippets created.
+- Better `.vscodeignore` configuration.
+
 ## [1.3.0] - 2018-02-24
 
 ### ✨Added

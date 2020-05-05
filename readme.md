@@ -16,6 +16,8 @@ This extension provides you React snippets for [VS Code](https://code.visualstud
 
 ## 📖 Snippets List
 
+💡*Tip: You can use the "insert snippet" action to find snippets: <kbd>command+shift+p</kbd>/<kbd>ctrl+shift+p</kbd> -> `Insert Snippet` -> type to search*
+
 #### Import
 
 |        Prefix | Method                                                                       |
