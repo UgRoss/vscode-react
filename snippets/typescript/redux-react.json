@@ -1,0 +1,138 @@
+{
+  "React Redux component": {
+    "prefix": "rcr",
+    "body": [
+      "import React from 'react';",
+      "import { useSelector, useDispatch } from 'react-redux';",
+      "",
+      "interface ${2:IProps} {",
+      "\t",
+      "}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}}: React.FC<${2:IProps}> = () => {",
+      "\tconst ${3:selector} = useSelector<InitialState, StateProps>((state: InitialState) => state.${3:selector});",
+      "\tconst dispatch = useDispatch();",
+      "",
+      "\treturn (",
+      "\t\t<div></div>",
+      "\t);",
+      "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};\n"
+    ],
+    "description": "React Redux Component"
+  },
+  "React Redux Class Component": {
+    "prefix": "rccr",
+    "body": [
+      "import React, { Component } from 'react';",
+      "import { connect } from 'react-redux';",
+      "",
+      "interface ${2:IProps} {",
+      "\t",
+      "}",
+      "interface ${3:IState} {",
+      "\t",
+      "}",
+      "",
+      "export class ${1:${TM_FILENAME_BASE}} extends Component<${2:IProps}, ${3:IState}> {",
+      "\tstate = {};",
+      "",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t$0",
+      "\t\t\t</div>",
+      "\t\t)",
+      "\t}",
+      "}",
+      "",
+      "const mapStateToProps = (state) => ({",
+      "\t",
+      "});",
+      "",
+      "const mapDispatchToProps = {",
+      "\t",
+      "};",
+      "",
+      "export default connect(mapStateToProps, mapDispatchToProps)(${1:${TM_FILENAME_BASE}});",
+      ""
+    ],
+    "description": "React Class Component with Redux"
+  },
+  "Redux Reducer": {
+    "prefix": "reducer",
+    "body": [
+      "export default (state = initialState, action) => {",
+      "\tswitch (action.type) {",
+      "\t\tcase ACTION_NAME:",
+      "\t\t\treturn Object.assign({}, state, {",
+      " ",
+      "\t\t\t});",
+      "\t\tdefault:",
+      "\t\t\treturn state;",
+      "\t}",
+      "};"
+    ],
+    "description": "Redux reducer template"
+  },
+  "Redux mapDispatchToProps": {
+    "prefix": "mdtp",
+    "body": [
+      "const mapDispatchToProps = (dispatch, ownProps) => bindActionCreators({",
+      "\t${1:action},",
+      "}, dispatch);\n"
+    ],
+    "description": "Redux mapDispatchToProps"
+  },
+  "Redux mapStateToProps": {
+    "prefix": "mstp",
+    "body": ["const mapStateToProps = (state, ownProps) => ({", "\t$0", "});\n"],
+    "description": "Redux mapStateToProps"
+  },
+  "Redux mapStateToProps & mapDispatchToProps": {
+    "prefix": "rmap",
+    "body": [
+      "const mapStateToProps = (state) => ({",
+      "\t${1}",
+      "});\n",
+      "const mapDispatchToProps = (dispatch) => bindActionCreators({",
+      "  ",
+      "}, dispatch);",
+      ""
+    ],
+    "description": "Redux mapStateToProps & mapDispatchToProps"
+  },
+  "Redux connect": {
+    "prefix": "connect",
+    "body": [
+      "export default connect(mapStateToProps, mapDispatchToProps)(${1:${TM_FILENAME_BASE}})"
+    ],
+    "description": "Redux connect"
+  },
+  "reduxAction": {
+    "prefix": "action",
+    "body": [
+      "export const ${1:actionName} = (${2:param}) => ({",
+      "\ttype: ${3:TYPE},",
+      "\tpayload: ${4:payload}",
+      "});\n"
+    ],
+    "description": "Redux action"
+  },
+  "useDispatch": {
+    "prefix": "useDispatch",
+    "body": ["const dispatch = useDispatch();"],
+    "description": "Redux useDispatch hook"
+  },
+  "useSelector": {
+    "prefix": "useSelector",
+    "body": ["const ${1:name} = useSelector(state => state.${1:name});"],
+    "description": "Redux useSelector hook"
+  },
+  "useStore": {
+    "prefix": "useStore",
+    "body": ["const store = useStore();"],
+    "description": "Redux useStore hook"
+  }
+}

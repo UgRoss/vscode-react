@@ -1,0 +1,148 @@
+{
+  "React Component": {
+    "prefix": "rc",
+    "body": [
+      "import React from 'react';",
+      "import PropTypes from 'prop-types';",
+      "",
+      "const ${1:$TM_FILENAME_BASE} = () => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t);",
+      "};",
+      "",
+      "${1}.propTypes = {};",
+      "",
+      "export default ${1};"
+    ],
+    "description": "React functional component with return statement"
+  },
+  "React Component without return": {
+    "prefix": "rcwr",
+    "body": [
+      "import React from 'react';",
+      "import PropTypes from 'prop-types';",
+      "",
+      "const ${1:$TM_FILENAME_BASE} = () => (",
+      "\t<div>",
+      "\t\t$0",
+      "\t</div>",
+      ");",
+      "",
+      "${1}.propTypes = {};",
+      "",
+      "export default ${1};"
+    ],
+    "description": "React functional component without return statement"
+  },
+  "React Component with memo": {
+    "prefix": "rcm",
+    "body": [
+      "import React, { memo } from 'react';",
+      "import PropTypes from 'prop-types';",
+      "",
+      "const ${1:$TM_FILENAME_BASE} = memo(() => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t);",
+      "});",
+      "",
+      "${1}.propTypes = {};",
+      "",
+      "export default ${1};"
+    ],
+    "description": "React component with memo"
+  },
+  "React Class Component": {
+    "prefix": "rcc",
+    "body": [
+      "import React from 'react';",
+      "import PropTypes from 'prop-types';",
+      "",
+      "class ${1:$TM_FILENAME_BASE} extends React.Component {",
+      "\tconstructor(props) {",
+      "\t\tsuper(props);",
+      "\t\tthis.state = {};",
+      "\t}",
+      "",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t$0",
+      "\t\t\t</div>",
+      "\t\t);",
+      "\t}",
+      "}",
+      "",
+      "${1}.propTypes = {};",
+      "",
+      "export default ${1};\n"
+    ],
+    "description": "React Class Component"
+  },
+  "React PureComponent": {
+    "prefix": "rpc",
+    "body": [
+      "import React, { PureComponent } from 'react'",
+      "import PropTypes from 'prop-types';",
+      "",
+      "class ${1:$TM_FILENAME_BASE} extends PureComponent {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t$0",
+      "\t\t\t</div>",
+      "\t\t)",
+      "\t}",
+      "}",
+      "",
+      "${1}.propTypes = {};",
+      "",
+      "export default ${1};\n"
+    ],
+    "description": "React PureComponent class"
+  },
+  "React HOC": {
+    "prefix": "rhoc",
+    "body": [
+      "import React from 'react';\n",
+      "function ${1:withFoo}(Component) {",
+      "\tfunction ${2:WithFoo}(props) {",
+      "\t\treturn <Component {...props} />;",
+      "\t}\n",
+      "\t${2:WithFoo}.displayName = `${1:withFoo}(${Component.displayName || Component.name}`;\n",
+      "\treturn ${2:WithFoo};",
+      "}\n",
+      "export default ${1:withFoo};\n"
+    ],
+    "description": "React HOC"
+  },
+  "React HOC class": {
+    "prefix": "rhocc",
+    "body": [
+      "import React from 'react';\n",
+      "function ${1:WithFooHoc}(WrappedComponent) {",
+      "\treturn class ${2:WithFoo} extends React.Component {",
+      "\t\tconstructor(props) {",
+      "\t\t\tsuper(props);",
+      "\t\t\tthis.state = {};",
+      "\t\t}\n",
+      "\t\trender() {",
+      "\t\t\treturn <WrappedComponent{...this.props} />;",
+      "\t\t}",
+      "\t};",
+      "}",
+      "\nexport default ${1:WithFooHoc};\n"
+    ],
+    "description": "React HOC Class Component"
+  },
+  "React bind method": {
+    "prefix": "rbind",
+    "body": "this.${1:methodName} = this.${1:methodName}.bind(this);\n",
+    "description": "bind method to this"
+  }
+}

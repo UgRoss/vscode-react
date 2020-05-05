@@ -1,0 +1,194 @@
+{
+  "PropTypes array": {
+    "prefix": "pta",
+    "body": "${1:propName}: PropTypes.array,",
+    "description": "PropTypes array"
+  },
+  "PropTypes array required": {
+    "prefix": "ptar",
+    "body": "${1:propName}: PropTypes.array.isRequired,",
+    "description": "PropTypes array required"
+  },
+
+  "PropTypes boolean": {
+    "prefix": "ptb",
+    "body": "${1:propName}: PropTypes.bool,",
+    "description": "PropTypes boolean"
+  },
+  "PropTypes boolean required": {
+    "prefix": "ptbr",
+    "body": "${1:propName}: PropTypes.bool.isRequired,",
+    "description": "PropTypes boolean required"
+  },
+
+  "PropTypes function": {
+    "prefix": "ptf",
+    "body": "${1:propName}: PropTypes.func,",
+    "description": "PropTypes function"
+  },
+  "PropTypes function required": {
+    "prefix": "ptfr",
+    "body": "${1:propName}: PropTypes.func.isRequired,",
+    "description": "PropTypes function required"
+  },
+
+  "PropTypes number": {
+    "prefix": "ptn",
+    "body": "${1:propName}: PropTypes.number,",
+    "description": "PropTypes number"
+  },
+  "PropTypes number required": {
+    "prefix": "ptnr",
+    "body": "${1:propName}: PropTypes.number.isRequired,",
+    "description": "PropTypes number required"
+  },
+
+  "PropTypes object": {
+    "prefix": "pto",
+    "body": "${1:propName}: PropTypes.object,",
+    "description": "PropTypes object"
+  },
+  "PropTypes object required": {
+    "prefix": "ptor",
+    "body": "${1:propName}: PropTypes.object.isRequired,",
+    "description": "PropTypes object required"
+  },
+
+  "PropTypes string": {
+    "prefix": "pts",
+    "body": "${1:propName}: PropTypes.string,",
+    "description": "PropTypes string"
+  },
+  "PropTypes string required": {
+    "prefix": "ptsr",
+    "body": "${1:propName}: PropTypes.string.isRequired,",
+    "description": "PropTypes string required"
+  },
+
+  "PropTypes symbol": {
+    "prefix": "ptsym",
+    "body": "${1:propName}: PropTypes.symbol,",
+    "description": "PropTypes symbol"
+  },
+  "PropTypes symbol required": {
+    "prefix": "ptsymr",
+    "body": "${1:propName}: PropTypes.symbol.isRequired,",
+    "description": "PropTypes symbol required"
+  },
+
+  "PropTypes node": {
+    "prefix": "ptnd",
+    "body": "${1:propName}: PropTypes.node,",
+    "description": "Anything that can be rendered: numbers, strings, elements or an array"
+  },
+  "PropTypes node required": {
+    "prefix": "ptndr",
+    "body": "${1:propName}: PropTypes.node.isRequired,",
+    "description": "Anything that can be rendered: numbers, strings, elements or an array"
+  },
+
+  "PropTypes element": {
+    "prefix": "ptel",
+    "body": "${1:propName}: PropTypes.element,",
+    "description": "PropTypes element required"
+  },
+  "PropTypes element required": {
+    "prefix": "ptelr",
+    "body": "${1:propName}: PropTypes.element.isRequired,",
+    "description": "PropTypes element required"
+  },
+
+  "PropTypes element type": {
+    "prefix": "ptelt",
+    "body": "${1:propName}: PropTypes.elementType,",
+    "description": "A React element type (ie. MyComponent)."
+  },
+  "PropTypes element type required": {
+    "prefix": "pteltr",
+    "body": "${1:propName}: PropTypes.elementType.isRequired,",
+    "description": "A React element type (ie. MyComponent) required."
+  },
+
+  "PropTypes instanceOf": {
+    "prefix": "pti",
+    "body": "${1:propName}: PropTypes.instanceOf($2),",
+    "description": "Is an instance of a class prop type"
+  },
+  "PropTypes instanceOf required": {
+    "prefix": "ptir",
+    "body": "${1:propName}: PropTypes.instanceOf($2).isRequired,",
+    "description": "Is an instance of a class prop type required"
+  },
+
+  "PropTypes enum (oneOf)": {
+    "prefix": "pte",
+    "body": "${1:propName}: PropTypes.oneOf(['$2']),",
+    "description": "You can ensure that your prop is limited to specific values by treating it as an enum."
+  },
+  "PropTypes enum (oneOf) required": {
+    "prefix": "pter",
+    "body": "${1:propName}: PropTypes.oneOf(['$2']).isRequired,",
+    "description": "You can ensure that your prop is limited to specific values by treating it as an enum. [Required]"
+  },
+
+  "PropTypes oneOfType": {
+    "prefix": "ptet",
+    "body": ["${1:propName}: PropTypes.oneOfType([", "\t$2", "]),"],
+    "description": "An object that could be one of many types"
+  },
+  "PropTypes oneOfType required": {
+    "prefix": "ptetr",
+    "body": ["${1:propName}: PropTypes.oneOfType([", "\t$2", "]).isRequired,"],
+    "description": "An object that could be one of many types [Required]"
+  },
+
+  "PropTypes arrayOf": {
+    "prefix": "ptao",
+    "body": "${1:propName}: PropTypes.arrayOf($2),",
+    "description": "An array of a certain type"
+  },
+  "PropTypes arrayOf required": {
+    "prefix": "ptaor",
+    "body": "${1:propName}: PropTypes.arrayOf($2).isRequired,",
+    "description": "An array of a certain type [Required]"
+  },
+
+  "PropTypes objectOf": {
+    "prefix": "ptoo",
+    "body": "${1:propName}: PropTypes.objectOf($2),",
+    "description": "An object with property values of a certain type"
+  },
+  "PropTypes objectOf required": {
+    "prefix": "ptoor",
+    "body": "${1:propName}: PropTypes.objectOf($2).isRequired,",
+    "description": "An object with property values of a certain type [Required]"
+  },
+
+  "PropTypes shape": {
+    "prefix": "ptsh",
+    "body": ["${1:propName}: PropTypes.shape({", "\t$2", "}),"],
+    "description": "An object taking on a particular shape"
+  },
+  "PropTypes shape required": {
+    "prefix": "ptshr",
+    "body": ["${1:propName}: PropTypes.shape({", "\t$2", "}).isRequired,"],
+    "description": "An object taking on a particular shape required"
+  },
+
+  "PropTypes exact": {
+    "prefix": "ptex",
+    "body": ["${1:propName}: PropTypes.exact({", "\t$2", "}),"],
+    "description": "An object with warnings on extra properties"
+  },
+  "PropTypes exact required": {
+    "prefix": "ptexr",
+    "body": ["${1:propName}: PropTypes.exact({", "\t$2", "}).isRequired,"],
+    "description": "An object with warnings on extra properties required"
+  },
+
+  "PropTypes any": {
+    "prefix": "ptany",
+    "body": "${1:propName}: PropTypes.any,",
+    "description": "Any prop type"
+  }
+}

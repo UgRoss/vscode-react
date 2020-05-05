@@ -1,0 +1,37 @@
+{
+  "describe block": {
+    "prefix": "desc",
+    "body": ["describe('$1', () => {", "\t$0", "});", ""],
+    "description": "Testing `describe` block"
+  },
+  "test block": {
+    "prefix": "test",
+    "body": ["test('should $1', () => {", "\t$0", "});", ""],
+    "description": "Testing `test` block"
+  },
+  "it block": {
+    "prefix": "tit",
+    "body": ["it('should $1', () => {", "\t$0", "});", ""],
+    "description": "Testing `it` block"
+  },
+  "React Component test": {
+    "prefix": "rtest",
+    "body": [
+      "import React from 'react';",
+      "import renderer from 'react-test-renderer';",
+      "",
+      "import ${1:${TM_FILENAME_BASE}} from '../${1:${TM_FILENAME_BASE}}';",
+      "",
+      "describe('<${1:${TM_FILENAME_BASE}} />', () => {",
+      "\tconst defaultProps = {};",
+      "\tconst wrapper = renderer.create(<${1:${TM_FILENAME_BASE}} {...defaultProps} />);",
+      "",
+      "\tit('renders correctly', () => {",
+      "\t\texpect(wrapper).toMatchSnapshot();",
+      "\t});",
+      "});",
+      ""
+    ],
+    "description": "Base React Component unit test template"
+  }
+}
