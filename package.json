@@ -2,7 +2,7 @@
   "name": "vscode-react-snippets",
   "displayName": "React Snippets",
   "description": "ReactJS, Redux and React Router code snippets with hooks support.",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "publisher": "ugross",
   "icon": "images/icon.png",
   "galleryBanner": {
