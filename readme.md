@@ -115,3 +115,12 @@ Hooks:
 | `rconnect→`    | Redux connect                                 |
 | `reducer→`     | Redux reducer template                        |
 | `action→`      | Redux action template                         |
+
+### Tests
+
+| Prefix    | Description                          |
+| :-------- | :----------------------------------- |
+| `desc->`  | `describe` block                     |
+| `test->`  | `test` block                         |
+| `tit->`   | `it` block                           |
+| `rtest->` | Base React component unit test setup |
